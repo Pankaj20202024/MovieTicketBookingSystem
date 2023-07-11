@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home_fragment_container">
+
+    <RelativeLayout
+        android:id="@+id/HeaderContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:id="@+id/choices_container"
+            >
+            <LinearLayout
+                android:id="@+id/inner_choice_container1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/hollywood_movies"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HOLLYWOOD"
+                    android:textSize="11dp"
+                    android:layout_margin="3dp"
+                    android:backgroundTint="@color/dark_blue"
+                    android:layout_weight="1"
+                    />
+                <Button
+                    android:id="@+id/bollywood_movies"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BOLLYWOOD"
+                    android:textSize="11dp"
+                    android:backgroundTint="@color/dark_blue"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/inner_choice_container2"
+                android:layout_width="match_parent"
+                android:layout_below="@id/inner_choice_container1"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/south_movies"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="South"
+                    android:textSize="11dp"
+                    android:layout_margin="3dp"
+                    android:backgroundTint="@color/dark_blue"
+                    android:layout_weight="1"
+                    />
+                <Button
+                    android:id="@+id/cartoon_movies"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cartoon"
+                    android:textSize="11dp"
+                    android:layout_margin="3dp"
+                    android:backgroundTint="@color/dark_blue"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/choices_container"
+            >
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/MoviesContainer1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            >
+
+                            <ImageView
+                                android:id="@+id/movie1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="250dp"
+                                android:src="@drawable/piratesofthecarrabian"
+                                />
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            >
+                            <ImageView
+                                android:id="@+id/movie2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="250dp"
+                                android:src="@drawable/avenger_endgame" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/MoviesContainer2"
+                        android:layout_width="match_parent"
+                        android:layout_below="@+id/MoviesContainer1"
+                        android:layout_marginTop="15dp"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            >
+
+                            <ImageView
+                                android:id="@+id/movie3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="250dp"
+                                android:src="@drawable/fast_and_furious9" />
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            >
+                            <ImageView
+                                android:id="@+id/movie4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="250dp"
+                                android:src="@drawable/spider_man_no_way_home"/>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/MoviesContainer3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_below="@+id/MoviesContainer2"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            >
+
+                            <ImageView
+                                android:id="@+id/movie5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="250dp"
+                                android:src="@drawable/avenger_infinity_war" />
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            >
+                            <ImageView
+                                android:id="@+id/movie6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="250dp"
+                                android:src="@drawable/aquaman" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </ScrollView>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/avenger_endgame"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="MOVIE TICKET BOOKING SYSTEM"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="22dp"
+        android:textColor="@color/dark_blue"
+        android:background="@drawable/signin_page_shape"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:elevation="30dp"
+        android:background="@drawable/signin_page_shape"
+        >
+
+        <TextView
+            android:padding="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:textColor="@color/dark_blue"
+            android:text="Welcome"/>
+
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="@color/dark_blue"
+            android:hint="Enter user name "
+            android:textAlignment="center"
+
+            />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="@color/dark_blue"
+            android:hint="Set your userId"
+            android:textAlignment="center"
+
+            />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textPassword"
+            android:textColor="@color/dark_blue"
+            android:hint="Set your password"
+            android:textAlignment="center"
+
+            />
+
+        <Button
+            android:id="@+id/btn_signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="@color/dark_blue"
+            android:padding="10dp"
+            android:text="SignIn"
+            app:cardCornerRadius="10dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Already Have Account ? "
+                android:layout_weight="1"
+                android:textColor="@color/dark_blue"
+                android:textSize="15dp"
+                />
+            <TextView
+                android:id="@+id/already_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LogIn"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_weight="1"
+                android:textColor="@color/dark_blue"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

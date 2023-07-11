@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RateUsFragment">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/fragment_rating"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="4dp"
+        android:gravity="center">
+
+
+        <TextView
+            android:id="@+id/Question1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How would you rate the selection of movies ?"
+            android:textSize="15dp"
+            android:background="@drawable/ticket_shape"
+            android:textAlignment="center"
+            android:backgroundTint="@color/dark_blue"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="16dp"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="0"
+            android:stepSize="1"
+            android:progressTint="@color/dark_blue"
+            android:secondaryProgressTint="@color/dark_blue"
+            android:layout_marginBottom="16dp"
+            />
+
+        <TextView
+            android:id="@+id/Question2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How would you rate the ease of using our app ? "
+            android:textSize="15dp"
+            android:background="@drawable/ticket_shape"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/dark_blue"
+            android:layout_marginBottom="16dp"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="0"
+            android:stepSize="1"
+            android:progressTint="@color/dark_blue"
+            android:secondaryProgressTint="@color/dark_blue"
+            android:layout_marginBottom="16dp"
+            />
+
+        <TextView
+            android:id="@+id/Question3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rate Our Ticket Booking System "
+            android:textSize="15dp"
+            android:background="@drawable/ticket_shape"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/dark_blue"
+            android:layout_marginBottom="16dp"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="0"
+            android:stepSize="1"
+            android:progressTint="@color/dark_blue"
+            android:secondaryProgressTint="@color/dark_blue"
+            android:layout_marginBottom="16dp"
+            />
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/dark_blue"
+            android:text="Submit"/>
+
+    </LinearLayout>
+
+
+</FrameLayout>

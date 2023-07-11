@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".UserProfileFragment">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_gravity="center"
+       >
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+
+           >
+           <RelativeLayout
+               android:id="@+id/profile_image_container"
+               android:layout_width="150dp"
+               android:layout_height="150dp"
+               android:layout_marginTop="16dp"
+               android:background="@drawable/circular_shape_background"
+               android:layout_centerHorizontal="true"
+               android:padding="16dp">
+
+               <ImageView
+                   android:id="@+id/profile_image"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:src="@drawable/userphoto"/>
+
+           </RelativeLayout>
+       </RelativeLayout>
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_marginTop="8dp"
+           >
+
+           <TextView
+               android:id="@+id/user_registered_name"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="User Name"
+               android:textAlignment="center"
+               android:textSize="17dp"
+               android:textColor="@color/dark_blue"
+               android:padding="3dp"
+               android:layout_marginTop="14dp"
+               />
+           <TextView
+               android:id="@+id/user_registered_email"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="User Email"
+               android:textAlignment="center"
+               android:textSize="17dp"
+
+               android:textColor="@color/dark_blue"
+               android:padding="3dp"
+               android:layout_marginTop="14dp"
+               android:layout_below="@+id/user_registered_name"
+               />
+
+           <TextView
+               android:id="@+id/user_given_rating"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Overall Rating : "
+               android:textAlignment="center"
+               android:textSize="17dp"
+               android:textColor="@color/dark_blue"
+               android:padding="3dp"
+               android:layout_marginTop="14dp"
+               android:layout_below="@+id/user_registered_email"
+               />
+           <TextView
+               android:id="@+id/Premimum_features"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Premimum Feature"
+               android:textAlignment="center"
+               android:textSize="17dp"
+               android:textStyle="bold"
+               android:textColor="@color/dark_blue"
+               android:padding="3dp"
+               android:layout_marginTop="14dp"
+               android:layout_below="@+id/user_given_rating"
+               />
+
+           <Button
+               android:id="@+id/btn_delete_account"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:backgroundTint="@color/dark_blue"
+               android:padding="10dp"
+               android:layout_marginTop="25dp"
+               android:textStyle="bold"
+               android:text="Delete Account"
+               android:layout_centerHorizontal="true"
+               android:layout_below="@+id/Premimum_features"
+               app:cardCornerRadius="10dp" />
+
+       </RelativeLayout>
+
+   </LinearLayout>
+
+</FrameLayout>

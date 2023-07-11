@@ -1,0 +1,1336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User_Booking_History_Fragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Ticket Booking History"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:textColor="@color/dark_blue"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+            <Button
+                android:id="@+id/datepicker"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/date_pick"
+                android:gravity="center"
+                />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+<!--                first hollywood film ticket container -->
+                <LinearLayout
+                    android:id="@+id/first_film_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/user_booked_ticket_shadow_background"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="223dp"
+                            android:src="@drawable/piratesofthecarrabian" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/movie_name1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="Pirates Of The Carrabiean"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/ticket_price1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/movie_name1"
+                            android:layout_marginTop="10dp"
+                            android:text="Price : Rs. 700"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/user_ticket_status1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ticket_price1"
+                            android:layout_marginTop="5dp"
+                            android:text="Status : Confirmed"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/Silver_seat_no1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/user_ticket_status1"
+                            android:layout_marginTop="5dp"
+                            android:text="Silver Seat No : none"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/Golden_seat_no1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/Silver_seat_no1"
+                            android:layout_marginTop="5dp"
+                            android:text="Golden Seat No : 1,2 "
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/Platinium_seat_no1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/Golden_seat_no1"
+                            android:layout_marginTop="5dp"
+                            android:text="Platinium Seat No : none "
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/show_time1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/Platinium_seat_no1"
+                            android:layout_marginTop="5dp"
+                            android:text="Show Time : 9:00  AM "
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/show_day1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/show_time1"
+                            android:layout_marginTop="5dp"
+                            android:text="Show Date : 10-05-2023 "
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                            <Button
+                                android:id="@+id/setalarm1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:backgroundTint="@color/dark_blue"
+                                android:textAlignment="center"
+                                android:layout_below="@+id/show_day1"
+                                android:layout_centerHorizontal="true"
+                                android:textSize="10dp"
+                                android:text="Set Reminder" />
+
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+<!--                user booked ticket for second Hollywood film  -->
+
+                <LinearLayout
+                    android:id="@+id/second_film_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/first_film_container"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/user_booked_ticket_shadow_background"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="224dp"
+                            android:src="@drawable/rrr" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/movie_name2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="RRR"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/ticket_price2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/movie_name2"
+                            android:layout_marginTop="10dp"
+                            android:text="Price : Rs. 500"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/user_ticket_status2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ticket_price2"
+                            android:layout_marginTop="5dp"
+                            android:text="Status : Confirmed"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/Silver_seat_no2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/user_ticket_status2"
+                            android:layout_marginTop="5dp"
+                            android:text="Silver Seat No : 1,3"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/Golden_seat_no2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/Silver_seat_no2"
+                            android:layout_marginTop="5dp"
+                            android:text="Golden Seat No : none "
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/Platinium_seat_no2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/Golden_seat_no2"
+                            android:layout_marginTop="5dp"
+                            android:text="Platinium Seat No : none "
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/show_time2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/Platinium_seat_no2"
+                            android:layout_marginTop="5dp"
+                            android:text="Show Time : 2:00 PM "
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/show_day2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/show_time2"
+                            android:layout_marginTop="5dp"
+                            android:text="Show Date : 10-05-2023 "
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/setalarm2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="showTimePicker"
+                            android:layout_gravity="center_horizontal"
+                            android:backgroundTint="@color/dark_blue"
+                            android:textAlignment="center"
+                            android:layout_below="@+id/show_day2"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="10dp"
+                            android:text="Set Reminder" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <!--   user booked ticket for third Hollywood film  -->
+
+                <LinearLayout
+                    android:id="@+id/third_film_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/second_film_container"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/user_booked_ticket_shadow_background"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="224dp"
+                            android:src="@drawable/fast_and_furious9" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/movie_name3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="Fast And Furious 8"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/ticket_price3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/movie_name3"
+                            android:layout_marginTop="10dp"
+                            android:text="Price : Rs. 2200"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/user_ticket_status3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ticket_price3"
+                            android:layout_marginTop="5dp"
+                            android:text="Status : Confirmed"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/Silver_seat_no3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/user_ticket_status3"
+                            android:layout_marginTop="5dp"
+                            android:text="Silver Seat No : none"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/Golden_seat_no3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/Silver_seat_no3"
+                            android:layout_marginTop="5dp"
+                            android:text="Golden Seat No : none "
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/Platinium_seat_no3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/Golden_seat_no3"
+                            android:layout_marginTop="5dp"
+                            android:text="Platinium Seat No : 1,2,3,4 "
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/show_time3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/Platinium_seat_no3"
+                            android:layout_marginTop="5dp"
+                            android:text="Show Time : 9:00 PM "
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/show_day3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/show_time3"
+                            android:layout_marginTop="5dp"
+                            android:text="Show Date : 12-05-2023"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/setalarm3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:backgroundTint="@color/dark_blue"
+                            android:textAlignment="center"
+                            android:layout_below="@+id/show_day3"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="10dp"
+                            android:text="Set Reminder" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <!--  user booked ticket for second Holly wood film  -->
+
+                <LinearLayout
+                    android:id="@+id/fourth_film_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/third_film_container"
+                    android:layout_margin="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/user_booked_ticket_shadow_background"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="224dp"
+                            android:src="@drawable/spider_man_no_way_home" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/movie_name4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="Spider Man No Way Home"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/ticket_price4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/movie_name4"
+                            android:layout_marginTop="10dp"
+                            android:text="Price : Rs. 1850"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/user_ticket_status4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ticket_price4"
+                            android:layout_marginTop="5dp"
+                            android:text="Status : Confirmed"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/Silver_seat_no4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/user_ticket_status4"
+                            android:layout_marginTop="5dp"
+                            android:text="Silver Seat No : 1,2,3"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/Golden_seat_no4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/Silver_seat_no4"
+                            android:layout_marginTop="5dp"
+                            android:text="Golden Seat No : none "
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/Platinium_seat_no4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/Golden_seat_no4"
+                            android:layout_marginTop="5dp"
+                            android:text="Platinium Seat No : 2,3 "
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/show_time4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/Platinium_seat_no4"
+                            android:layout_marginTop="5dp"
+                            android:text="Show Time : 2:00 PM "
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/show_day4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/show_time4"
+                            android:layout_marginTop="5dp"
+                            android:text="Show Date : 12-05-2023"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/setalarm4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:backgroundTint="@color/dark_blue"
+                            android:textAlignment="center"
+                            android:layout_below="@+id/show_day4"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="10dp"
+                            android:text="Set Reminder" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <!--   user booked ticket for fifth Holly wood film  -->
+
+                <LinearLayout
+                    android:id="@+id/fifth_film_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fourth_film_container"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/user_booked_ticket_shadow_background"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="224dp"
+                            android:src="@drawable/avenger_infinity_war" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/movie_name5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="Avenger Inifinity War"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/ticket_price5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/movie_name5"
+                            android:layout_marginTop="10dp"
+                            android:text="Price : Rs. 1250"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/user_ticket_status5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ticket_price5"
+                            android:layout_marginTop="5dp"
+                            android:text="Status : Confirmed"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/Silver_seat_no5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/user_ticket_status5"
+                            android:layout_marginTop="5dp"
+                            android:text="Silver Seat No : 1,2,3,4,5"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/Golden_seat_no5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/Silver_seat_no5"
+                            android:layout_marginTop="5dp"
+                            android:text="Golden Seat No : none "
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/Platinium_seat_no5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/Golden_seat_no5"
+                            android:layout_marginTop="5dp"
+                            android:text="Platinium Seat No : none "
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/show_time5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/Platinium_seat_no5"
+                            android:layout_marginTop="5dp"
+                            android:text="Show Time : 9:00 AM "
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/show_day5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/show_time5"
+                            android:layout_marginTop="5dp"
+                            android:text="Show Date : 10-05-2023 "
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/setalarm5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:backgroundTint="@color/dark_blue"
+                            android:textAlignment="center"
+                            android:layout_below="@+id/show_day5"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="10dp"
+                            android:text="Set Reminder" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <!-- user booked ticket for sixth Holly wood film  -->
+
+                <LinearLayout
+                    android:id="@+id/sixth_film_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fifth_film_container"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/user_booked_ticket_shadow_background"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="224dp"
+                            android:src="@drawable/aquaman" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/movie_name6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="Aquaman"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/ticket_price6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/movie_name6"
+                            android:layout_marginTop="10dp"
+                            android:text="Price : Rs. 250"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/user_ticket_status6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ticket_price6"
+                            android:layout_marginTop="5dp"
+                            android:text="Status : Confirmed"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/Silver_seat_no6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/user_ticket_status6"
+                            android:layout_marginTop="5dp"
+                            android:text="Silver Seat No : 1"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/Golden_seat_no6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/Silver_seat_no6"
+                            android:layout_marginTop="5dp"
+                            android:text="Golden Seat No : none "
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/Platinium_seat_no6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/Golden_seat_no6"
+                            android:layout_marginTop="5dp"
+                            android:text="Platinium Seat No : none"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/show_time6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/Platinium_seat_no6"
+                            android:layout_marginTop="5dp"
+                            android:text="Show Time : 9:00 PM "
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/show_day6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/show_time6"
+                            android:layout_marginTop="5dp"
+                            android:text="Show Date : 14-05-2023 "
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/setalarm6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:backgroundTint="@color/dark_blue"
+                            android:textAlignment="center"
+                            android:layout_below="@+id/show_day6"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="10dp"
+                            android:text="Set Reminder" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+                <!-- user booked ticket for seventh Hollywood film  -->
+
+                <LinearLayout
+                    android:id="@+id/seventh_film_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sixth_film_container"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/user_booked_ticket_shadow_background"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="224dp"
+                            android:src="@drawable/puspha" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/movie_name7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="Puspha"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/ticket_price7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/movie_name7"
+                            android:layout_marginTop="10dp"
+                            android:text="Price : Rs. 750"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/user_ticket_status7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ticket_price7"
+                            android:layout_marginTop="5dp"
+                            android:text="Status : Confirmed"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/Silver_seat_no7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/user_ticket_status7"
+                            android:layout_marginTop="5dp"
+                            android:text="Silver Seat No : 2,3,4"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/Golden_seat_no7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/Silver_seat_no7"
+                            android:layout_marginTop="5dp"
+                            android:text="Golden Seat No : none "
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/Platinium_seat_no7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/Golden_seat_no7"
+                            android:layout_marginTop="5dp"
+                            android:text="Platinium Seat No : none"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/show_time7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/Platinium_seat_no7"
+                            android:layout_marginTop="5dp"
+                            android:text="Show Time : 9:00 PM "
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/show_day7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/show_time7"
+                            android:layout_marginTop="5dp"
+                            android:text="Show Date : 14-05-2023 "
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/setalarm7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:backgroundTint="@color/dark_blue"
+                            android:textAlignment="center"
+                            android:layout_below="@+id/show_day7"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="10dp"
+                            android:text="Set Reminder" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <!-- user booked ticket for eigth Hollywood film  -->
+
+                <LinearLayout
+                    android:id="@+id/eigth_film_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/seventh_film_container"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/user_booked_ticket_shadow_background"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="224dp"
+                            android:src="@drawable/moana" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/movie_name8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="Moana"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/ticket_price8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/movie_name8"
+                            android:layout_marginTop="10dp"
+                            android:text="Price : Rs. 2200"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/user_ticket_status8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ticket_price8"
+                            android:layout_marginTop="5dp"
+                            android:text="Status : Confirmed"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/Silver_seat_no8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/user_ticket_status8"
+                            android:layout_marginTop="5dp"
+                            android:text="Silver Seat No : none"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/Golden_seat_no8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/Silver_seat_no8"
+                            android:layout_marginTop="5dp"
+                            android:text="Golden Seat No : none "
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/Platinium_seat_no8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/Golden_seat_no8"
+                            android:layout_marginTop="5dp"
+                            android:text="Platinium Seat No : 5,6,7,8"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/show_time8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/Platinium_seat_no8"
+                            android:layout_marginTop="5dp"
+                            android:text="Show Time : 2:00 PM "
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/show_day8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/show_time8"
+                            android:layout_marginTop="5dp"
+                            android:text="Show Date : 14-05-2023 "
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/setalarm8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:backgroundTint="@color/dark_blue"
+                            android:textAlignment="center"
+                            android:layout_below="@+id/show_day8"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="10dp"
+                            android:text="Set Reminder" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <!-- user booked ticket for nine Hollywood film  -->
+
+                <LinearLayout
+                    android:id="@+id/nineth_film_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/eigth_film_container"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/user_booked_ticket_shadow_background"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="224dp"
+                            android:src="@drawable/push_in_boot" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/movie_name9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="Push In Boot's"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/ticket_price9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/movie_name9"
+                            android:layout_marginTop="10dp"
+                            android:text="Price : Rs. 1750"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/user_ticket_status9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ticket_price9"
+                            android:layout_marginTop="5dp"
+                            android:text="Status : Confirmed"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/Silver_seat_no9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/user_ticket_status9"
+                            android:layout_marginTop="5dp"
+                            android:text="Silver Seat No : 1"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/Golden_seat_no9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/Silver_seat_no9"
+                            android:layout_marginTop="5dp"
+                            android:text="Golden Seat No : 2 "
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/Platinium_seat_no9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/Golden_seat_no9"
+                            android:layout_marginTop="5dp"
+                            android:text="Platinium Seat No : 5,6"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/show_time9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/Platinium_seat_no9"
+                            android:layout_marginTop="5dp"
+                            android:text="Show Time : 9:00 AM "
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/show_day9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/show_time9"
+                            android:layout_marginTop="5dp"
+                            android:text="Show Date : 12-05-2023 "
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+                        <Button
+                            android:id="@+id/setalarm9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:backgroundTint="@color/dark_blue"
+                            android:textAlignment="center"
+                            android:layout_below="@+id/show_day9"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="10dp"
+                            android:text="Set Reminder" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <Button
+                    android:id="@+id/show_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Show All"
+                    android:backgroundTint="@color/dark_blue"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_below="@+id/event6maincontainer"
+                    android:visibility="gone"
+                    />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</FrameLayout>
